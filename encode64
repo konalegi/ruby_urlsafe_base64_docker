@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'base64'
+input = STDIN.read.split("\n").first
+puts Base64.urlsafe_encode64(input, padding: false)
